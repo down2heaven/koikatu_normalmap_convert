@@ -8,7 +8,7 @@ def convert(path):
     hei=normal_map.size[1]                                                      #读取宽高
     normal_map_gray=normal_map.convert('L')                                     #转换灰度图
     for w in range(wid):
-      print("这是什么！灰度图！转一下！已进行",w,"列，共",wid,"列，已完成占比为：",w/wid,end='',flush=True)
+      print("已进行",w,"列，共",wid,"列，已完成占比为：",w/wid)
       for h in range(hei):
          gray=normal_map_gray.getpixel((w,h))                                   #灰度
          alpha=normal_map.getpixel((w,h))[3]                                    #透明度
